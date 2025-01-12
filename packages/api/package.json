@@ -4,6 +4,7 @@
   "description": "",
   "main": "./src/index.ts",
   "devDependencies": {
+    "ajv": "^8.17.1",
     "ts-json-schema-generator": "^2.3.0"
   }
 }
