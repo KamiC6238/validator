@@ -1,13 +1,9 @@
-interface Person {
-  age: number;
-  name: string
-}
+import { createGenerator } from 'ts-json-schema-generator'
+import * as path from 'path'
 
-export function createPerson(person: Person) {
-  console.log(person)
-}
-
-createPerson({
-  name: 'Ayanami Rei',
-  age: 15
+const generator = createGenerator({
+  path: path.resolve(__dirname, 'types.ts'),
+  type: '*',
 })
+
+console.dir(JSON.stringify(generator.createSchema()))

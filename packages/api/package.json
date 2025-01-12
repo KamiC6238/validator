@@ -1,0 +1,9 @@
+{
+  "name": "@validator/api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "ts-json-schema-generator": "^2.3.0"
+  }
+}
