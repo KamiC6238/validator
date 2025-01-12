@@ -47,7 +47,7 @@ if (validator) {
   const pass = validator({
     firstName: 'Ayanami',
     lastName: 'Rei',
-    age: 16
+    age: undefined // will throw error
   })
 
   if (pass) {
